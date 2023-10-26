@@ -23,7 +23,7 @@ For i = CurrentPage - 2 To CurrentPage + 2: Do
 	ElseIf i = Int(CurrentPage) Then
 		PageHTML = PageHTML & "<li class='active'><a>" & i & "</a></li>"
 	Else
-	PageHTML = PageHTML & "<li><a href='?p=" & i & "&n=" & PostCount & "'>" & i & "</a></li>"
+		PageHTML = PageHTML & "<li><a href='?p=" & i & "&n=" & PostCount & "'>" & i & "</a></li>"
 	End If
 Loop While False: Next
 ```
