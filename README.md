@@ -10,7 +10,7 @@ After that, clone the repository to a folder in your IIS server, make sure the d
 ## What the heck even is this?  
 It's exactly as the description says.  
 I made it for "fun" over the course of a couple of days, teaching myself ASP/VBS on the fly to get it done. It serves absolutely zero purpose except my own amusement.  
-Partially, I just wanted an excuse to make something with an old PC and old software, and partially because I wanted to try something new.  
+Partially, I just wanted an excuse to make something with an old PC and old software, and partially, I wanted to try something new.  
 
 ## Why ASP?  
 Because I hadn't used it before, and also because nobody else uses it anymore. I now understand why.  
