@@ -43,7 +43,7 @@
 			PageHTML = ""
 			
 			' Draw left arrow
-			If CurrentPage = 1 Then
+			If CurrentPage <= 1 Then
 				PageHTML = PageHTML & "<li class='disabled'><a>&laquo;</a></li>"
 			Else
 				PageHTML = PageHTML & "<li><a href='?p=" & CurrentPage - 1 & "&n=" & PostCount & "'>&laquo;</a></li>"
@@ -61,7 +61,7 @@
 			Loop While False: Next
 			
 			' Draw right arrow
-			If Int(CurrentPage) = Int(TotalPages) Then
+			If Int(CurrentPage) >= Int(TotalPages) Then
 				PageHTML = PageHTML & "<li class='disabled'><a>&raquo;</a></li>"
 			Else
 				PageHTML = PageHTML & "<li><a href='?p=" & CurrentPage + 1 & "&n=" & PostCount & "'>&raquo;</a></li>"

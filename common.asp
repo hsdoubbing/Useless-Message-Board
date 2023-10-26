@@ -37,7 +37,7 @@ Function RenderPosts(PostCount, StartPost)
 		End If
 		
 		.MoveLast
-		If StartPost = -1 Then
+		If StartPost < 0 Then ' Technically this isn't necessary, as zero will already do this, but this makes it explicit
 			.MoveLast
 		ElseIf .AbsolutePosition - StartPost < 1 Then
 			.MoveFirst
