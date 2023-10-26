@@ -1,4 +1,4 @@
-# Useless-Message-Board  
+# Useless Message Board  
 A very simple insecure message board written in ASP and Bootstrap 2, using an Access 2000 database.  
 Made with love(?) in Macromedia Dreamweaver 8 and tested on IIS 5.1.  
 And yes, all done in 2023.  
