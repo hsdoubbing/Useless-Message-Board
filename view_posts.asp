@@ -46,7 +46,7 @@
 			If CurrentPage <= 1 Then
 				PageHTML = PageHTML & "<li class='disabled'><a>&laquo;</a></li>"
 			Else
-				PageHTML = PageHTML & "<li><a href='?p=" & CurrentPage - 1 & "&n=" & PostCount & "'>&laquo;</a></li>"
+				PageHTML = PageHTML & "<li><a href='view_posts.asp?p=" & CurrentPage - 1 & "&n=" & PostCount & "'>&laquo;</a></li>"
 			End If
 			
 			' Draw numbers
@@ -56,7 +56,7 @@
 				ElseIf i = Int(CurrentPage) Then
 					PageHTML = PageHTML & "<li class='active'><a>" & i & "</a></li>"
 				Else
-					PageHTML = PageHTML & "<li><a href='?p=" & i & "&n=" & PostCount & "'>" & i & "</a></li>"
+					PageHTML = PageHTML & "<li><a href='view_posts.asp?p=" & i & "&n=" & PostCount & "'>" & i & "</a></li>"
 				End If
 			Loop While False: Next
 			
@@ -64,7 +64,7 @@
 			If Int(CurrentPage) >= Int(TotalPages) Then
 				PageHTML = PageHTML & "<li class='disabled'><a>&raquo;</a></li>"
 			Else
-				PageHTML = PageHTML & "<li><a href='?p=" & CurrentPage + 1 & "&n=" & PostCount & "'>&raquo;</a></li>"
+				PageHTML = PageHTML & "<li><a href='view_posts.asp?p=" & CurrentPage + 1 & "&n=" & PostCount & "'>&raquo;</a></li>"
 			End If
 			
 			Response.Write PageHTML
